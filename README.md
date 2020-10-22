@@ -1,2 +1,2 @@
-## Лабораторная работа
+## Р›Р°Р±РѕСЂР°С‚РѕСЂРЅС‹Рµ СЂР°Р±РѕС‚С‹
 [click](https://drive.google.com/drive/folders/1svizjgVW0gLhtNqI3PnVL_ZA57oTwTef)
