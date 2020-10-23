@@ -51,7 +51,6 @@ a {
 
 .header__logo {
 	display: inline-block;
-	margin-left: 3px;
 }
 
 .header__logo-img {
@@ -62,12 +61,16 @@ a {
 .nav {
 	display: inline-block;
 
-	margin-top: 66px;
+	margin-top: 60px;
 	font-size: 23px;
 }
 
 .nav__item {
 	margin-left: 70px;
+}
+
+.nav__item-retail {
+	margin-left: 68px;
 }
 
 .nav_right {
@@ -86,7 +89,7 @@ a {
 }
 
 .nav_right__item_demo {
-	margin-right: 29px;
+	margin-right: 21px;
 }
 
 .nav_right__item_getstart {
@@ -108,7 +111,6 @@ a {
 .tagline__title {
 	font-weight: 700;
 	font-size: 77px;
-	
 	line-height: 1.2em;
 
 	width: 1000px;
@@ -209,4 +211,70 @@ a {
 
 .card__btn_yellow {
 	background-color: #fcc242;
+}
+
+.startup {
+	font-family: 'Raleway', sans-serif;
+	margin-top: 232px;
+	position: relative;
+}
+
+.startup__container-info {
+	display: inline-block;
+	margin-left: 130px;
+	padding-right: 35px;
+	width: calc(100% - 1090px - 130px )
+}
+
+.startup__title {
+	font-size: 48px;
+	font-weight: 700;
+	margin-top: 180px;
+	color: #4a4a4a;
+}
+
+.startup__text {
+	font-size: 34px;
+	color: #4a4a4a;
+	margin-top: 48px;
+}
+
+.startup__img {
+	width: 1090px;
+	height: 784px;
+	background: url(../images/startup__img.png);
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.startup__container-app {
+	width: 215px;
+	height: 65px;
+	overflow: hidden;
+	display: inline-block;
+	position: relative;
+	margin-top: 80px;
+}
+
+.startup__app-img {
+	position: absolute;
+	overflow: hidden;
+}
+
+.startup__container-app_google {
+	margin-left: 13px;
+}
+.startup__container-app_apple {
+	margin-left: 38px;
+}
+
+.startup__app-img_google {
+    left: -38px;
+	top: -21px;
+}
+
+.startup__app-img_apple {
+	left: -38px;
+	top: -89px;
 }
