@@ -24,7 +24,7 @@ html, body {
 }
 
 body {
-	min-height: 2000px;
+	height: 40000px;
 }
 
 a {
@@ -46,7 +46,7 @@ a {
 	font-family: 'Raleway';  
 	font-weight: 500;
 	color: #4a4a4a;
-	font-size: 23px;
+	font-size: 0;
 }
 
 .header__logo {
@@ -135,6 +135,7 @@ a {
 
 .cards {
 	padding-top: 163px;
+	font-size: 0;
 }
 
 .card {
@@ -248,6 +249,10 @@ a {
 	right: 0;
 }
 
+.startup__container {
+	font-size: 0;
+}
+
 .startup__container-app {
 	width: 215px;
 	height: 65px;
@@ -277,4 +282,40 @@ a {
 .startup__app-img_apple {
 	left: -38px;
 	top: -89px;
+}
+
+.extend {
+	margin-top: 350px;
+	background: url(../images/extend.png) no-repeat 0 0;
+	font-family: 'Raleway';
+	padding-top: 290px;
+}
+
+.extend__card {
+	background-color: #4c56c0;
+	color: #fff;
+	width: 690px;
+	margin-left: 45px;
+	padding: 80px 0px 130px 45px;
+}
+
+.extend__card-title {
+	font-size: 93px;
+	font-weight: 700;
+}
+
+.extend__card-text {
+	font-size: 42px;
+	font-weight: 500;
+	margin-top: 40px;
+}
+
+.extend__card-btn {
+	margin-top: 75px;
+	padding: 12px 43px;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 26px;
+	background-color: #fcc242;
+	display: inline-block;
 }
