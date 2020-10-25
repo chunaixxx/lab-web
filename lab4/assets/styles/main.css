@@ -12,6 +12,20 @@
 	font-weight: 700; 
 }
 
+@font-face {
+	font-family: 'Roboto';  
+	src: url('../fonts/Roboto/Roboto-Medium.ttf'); 
+	font-style: normal; 
+	font-weight: 500; 
+}
+
+@font-face {
+	font-family: 'Roboto';  
+	src: url('../fonts/Roboto/Roboto-Regular.ttf'); 
+	font-style: normal; 
+	font-weight: 400; 
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -24,7 +38,7 @@ html, body {
 }
 
 body {
-	height: 40000px;
+	background: url(../images/footer-bg.png) no-repeat 0% 100%;
 }
 
 a {
@@ -352,4 +366,183 @@ a {
 .brands__brand_vimeo {
 	position: relative;
 	top: 15px;
+}
+
+.reviews {
+	font-family: 'Raleway';
+	margin-top: 130px;
+}
+
+.reviews__title {
+	font-size: 48px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.reviews__sub-title {
+	font-size: 34px;
+	font-weight: 500;
+	margin-top: 64px;
+	text-align: center;
+}
+
+.reviews__container-card {
+	position: relative;
+	height: 720px;
+}
+
+.reviews__card {
+	background-color: #fff;
+	color: #aca8af;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.reviews__card-1 {
+	font-size: 13px;
+	padding: 60px 40px;
+	width: 294px;
+	position: absolute;
+	top: 515px;
+	left: 0px;
+}
+
+.reviews__card-2 {
+	font-size: 18px;
+	padding: 70px 45px;
+	width: 390px;
+	position: absolute;
+	top: 110px;
+	left: 170px;
+}
+
+.reviews__card-3 {
+	font-size: 30px;
+	padding: 85px 40px 140px 40px;
+	width: 580px;
+	position: absolute;
+	left: 530px;
+	top: 170px;
+}
+
+.reviews__card-4 {
+	font-size: 18px;
+	padding: 70px 45px 90px 45px;
+	width: 390px;
+	position: absolute;
+	top: 450px;
+	right: 170px;
+}
+
+.reviews__card-5 {
+	font-size: 13px;
+	padding: 50px 35px 70px 35px;
+	width: 294px;
+	position: absolute;
+	top: 115px;
+	right: 0px;
+}
+
+.reviews__card-img {
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.reviews__card:before {
+	content: '"';
+	position: absolute;
+	left: 15px;
+	top: 0;
+	font-family: 'Roboto';
+	font-weight: 500;
+	font-size: 188px;
+	color: rgba(154, 94, 200, .15);
+}
+
+.footer {
+	margin-top: 220px;
+	color: #fff;
+	font-family: 'Roboto';
+}
+
+.footer__block {
+	display: inline-block;
+	vertical-align: top;	
+}
+
+.footer__block_small {
+	padding-top: 50px;
+}
+
+.footer__logo {
+	vertical-align: top;
+	margin-right: 220px;
+}
+
+.footer__block-title {
+	font-size: 23px;
+	font-weight: 500;
+}
+
+.footer__block-line {
+	font-size: 23px;
+	font-weight: 400;
+}
+
+.footer__contacts {
+	margin-right: 65px;
+}
+
+.footer__company {
+	margin-right: 100px;
+}
+
+.footer__privacy {
+	margin-right: 150px;
+}
+
+.footer__contacts > div {
+	margin-top: 50px;
+}
+
+.footer__company > div, .footer__social > div {
+	margin-top: 30px;
+}
+
+.footer__privacy > div {
+	margin-bottom: 25px;
+}
+
+.footer__phone, .footer__adress, .footer__mail {
+	margin-right: 15px;
+}
+
+.footer__line {
+	height: 2px;
+	background-color: rgba(255, 255, 255, .1);
+	margin-top: 50px;
+}
+
+.footer__copyright {
+	position: relative;
+	margin-top: 45px;
+	margin-bottom: 25px;
+}
+
+.footer__copyright-icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.footer__copyright-text {
+	font-size: 14px;
+	font-weight: 500;
+	margin-left: 20px;
+	position: relative;
+	top: -5px;
 }
