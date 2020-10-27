@@ -38,7 +38,7 @@ html, body {
 }
 
 body {
-	background: url(../images/footer-bg.png) no-repeat 0% 100%;
+	background: url(../images/footer-bg.png) no-repeat bottom center;
 }
 
 a {
@@ -81,6 +81,23 @@ a {
 
 .nav__item {
 	margin-left: 70px;
+	position: relative;
+}
+
+.nav__item:before {
+	content: '';
+	position: absolute;
+	top: calc(100% + 3px);
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #4a4a4a;
+	opacity: 0;
+	transition: all .5s ease;
+}
+
+.nav__item:hover:before {
+	opacity: 1;
 }
 
 .nav__item-retail {
@@ -113,6 +130,11 @@ a {
 	font-size: 23px;
 	clear: both;
 	background-color: #4c56c0;
+	transition: all .5s ease;
+}
+
+.nav_right__item_getstart:hover {
+	background-color: #fcc242;
 }
 
 .tagline {
@@ -218,15 +240,25 @@ a {
 	color: #fff;
 	font-size: 26px;
 	clear: both;
+	transition: all .5s ease;
 }
 
 .card__btn_blue {
-	background-color: #4c56c0;
+	background-color: hsl(235, 48%, 53%);
+}
+
+.card__btn_blue:hover {
+	background-color: hsl(235, 48%, 63%);
 }
 
 .card__btn_yellow {
-	background-color: #fcc242;
+	background-color: hsl(41, 97%, 62%);
 }
+
+.card__btn_yellow:hover {
+	background-color: hsl(41, 97%, 52%);
+}
+
 
 .startup {
 	font-family: 'Raleway', sans-serif;
@@ -290,7 +322,7 @@ a {
 
 .startup__app-img_google {
     left: -38px;
-	top: -21px;
+	top: -20px;
 }
 
 .startup__app-img_apple {
@@ -330,8 +362,13 @@ a {
 	border-radius: 8px;
 	color: #fff;
 	font-size: 26px;
-	background-color: #fcc242;
+	background-color: hsl(41, 97%, 62%);
 	display: inline-block;
+	transition: all .5s ease;
+}
+
+.extend__card-btn:hover {
+	background-color: hsl(41, 97%, 52%);
 }
 
 .brands {
@@ -398,6 +435,11 @@ a {
 	border-radius: 10px;
 	box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.1);
 	position: relative;
+	transition: all .3s ease;
+}
+
+.reviews__card:hover {
+	transform: scale(1.1);
 }
 
 .reviews__card-1 {
@@ -491,6 +533,7 @@ a {
 .footer__block-line {
 	font-size: 23px;
 	font-weight: 400;
+	display: block;
 }
 
 .footer__contacts {
@@ -505,15 +548,15 @@ a {
 	margin-right: 150px;
 }
 
-.footer__contacts > div {
+.footer__contacts > .footer__block-line {
 	margin-top: 50px;
 }
 
-.footer__company > div, .footer__social > div {
+.footer__company > .footer__block-line, .footer__social > .footer__block-line {
 	margin-top: 30px;
 }
 
-.footer__privacy > div {
+.footer__privacy > .footer__block-line {
 	margin-bottom: 25px;
 }
 
