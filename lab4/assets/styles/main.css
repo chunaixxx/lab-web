@@ -335,6 +335,20 @@ a {
 	background: url(../images/extend.png) no-repeat 0 0;
 	font-family: 'Raleway';
 	padding-top: 290px;
+	position: relative;
+}
+
+.extend:before {
+	position: absolute;
+	width: 90%;
+	height: 700px;
+	background-color: #000;
+	top: 50px;
+	left: 5%;
+	content: '';
+	z-index: 1;
+	opacity: .29;
+	border-radius: 100%;
 }
 
 .extend__card {
@@ -343,6 +357,8 @@ a {
 	width: 690px;
 	margin-left: 45px;
 	padding: 80px 0px 130px 45px;
+	position: relative;
+	z-index: 2;
 }
 
 .extend__card-title {
@@ -383,26 +399,36 @@ a {
 	margin-right: 30px;
 }
 
+.brands__brand_disney {
+	width: 200px;
+}
+
 .brands__brand_boss {
 	position: relative;
-	top: 28px;
+	bottom: 30px;
+	width: 100px;
+	margin-right: 100px;
 }
 
 .brands__brand_celine {
 	position: relative;
-	top: 10px;
+	bottom: 37px;
 	right: 4px;
+	width: 200px;
+	margin-right: 110px;
 }
 
 .brands__brand_yt {
 	position: relative;
-	bottom: 28px;
+	bottom: 34px;
 	right: 22px;
+	width: 230px;
 }
 
 .brands__brand_vimeo {
 	position: relative;
-	top: 15px;
+	bottom: 0px;
+	width: 200px;
 }
 
 .reviews {
