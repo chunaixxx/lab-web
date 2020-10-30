@@ -342,13 +342,14 @@ a {
 	position: absolute;
 	width: 90%;
 	height: 700px;
-	background-color: #000;
+	background: #000;
 	top: 50px;
 	left: 5%;
 	content: '';
 	z-index: 1;
-	opacity: .29;
+	opacity: .35;
 	border-radius: 100%;
+	filter: blur(10px);
 }
 
 .extend__card {
