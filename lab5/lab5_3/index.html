@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3 пункт</title>
+
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #eee;
+		}
+
+		.card-education {
+			background-color: #fff;
+			background-image: url(check-long.png);
+			background-size: cover;
+			background-position: center;
+
+			width: 600px;
+			height: 300px;
+			padding: 35px;
+
+			font-family: 'Arial';
+			color: #1e1e1e;
+
+			position: relative;
+			overflow: hidden;
+		}
+
+		.card-education:hover .card-education__video {
+			opacity: 1;
+		}
+
+		.card-education:hover {
+			background-image: none;
+		}
+
+		.card-education__container {
+			position: relative;
+			z-index: 2;
+		}
+
+		.card-eductaion__title {
+			margin-bottom: 10px;
+			font-size: 1.3em;
+		}
+
+		.card-education__link {
+			display: inline-block;
+			font-size: .75em;
+			text-decoration: none;
+			color: #4b6eb9;
+
+			position: relative;
+
+			margin-bottom: 60px;
+		}
+
+		.card-education__link:before {
+			content: '';
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			background-color: #4b6eb9;
+			width: 100%;
+			height: 1px;
+			
+			opacity: 0;
+			transition: all .3s ease;
+		}
+
+		.card-education__link:hover:before {
+			opacity: 1;
+		}
+
+		.card-education__count-item {
+			display: inline-block;
+			margin-right: 35px;
+		}
+
+		.card-education__count-text {
+			font-weight: bold;
+			font-size: 1.3em;
+			margin-bottom: 5px;
+		}
+
+		.card-education__count-type {
+			font-size: .8em;
+		}
+
+		.card-education__more {
+			display: inline-block;
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #1e1e1e;
+			font-weight: bold;
+			font-size: .75em;
+			margin-top: 50px;
+			margin-left: 20px;
+			position: relative;
+			overflow: hidden;
+			padding: 10px 0;
+		}
+
+		.card-education__more:before {
+			content: '';
+			position: absolute;
+			background-color: #1e1e1e;
+			width: 100%;
+			height: 2px;
+			bottom: 1px;
+			left: 0;
+			transition: all .3s ease;
+			transform: translateX(0%)
+		}
+
+		.card-education__more:hover:before {
+			transform: translateX(100%);
+		}
+
+		.card-education__video {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+
+			opacity: 0;
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<div class="card-education">
+
+		<div class="card-education__container">
+			<h3 class="card-eductaion__title">Бакалавриат и специалитет</h3>
+			<a class="card-education__link" href="#">69 программ</a>
+
+			<div class="card-education__count-list">
+				<div class="card-education__count-item">
+					<div class="card-education__count-text">2024</div>
+					<div class="card-education__count-type">бюджет</div>
+				</div>
+
+				<div class="card-education__count-item">
+					<div class="card-education__count-text">2774+</div>
+					<div class="card-education__count-type">платное</div>
+				</div>
+			</div>
+
+			<a class="card-education__more" href="#">Подробнее</a>
+		</div>
+
+		<video class="card-education__video" class="video is-loaded" loop="loop" preload="auto" autoplay="autoplay" muted="muted" playsinline="" data-was-processed="true">
+			<source src="./check.webm" type="video/webm">
+		</video>
+	</div>
+</body>
+</html>
