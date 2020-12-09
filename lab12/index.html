@@ -56,7 +56,7 @@
 				>
 			</form>
 
-			<ol class="list">
+			<ol class="list" v-if="students.length">
 				<li 
 					v-for="student in students" 
 					:key="student.idLast"
@@ -65,6 +65,8 @@
 					{{ `${student.surname} ${student.firstname}` }}
 				</li>
 			</ol>
+
+			<span v-else class="form__empty">Список пуст</span>
 		</div>
 
 

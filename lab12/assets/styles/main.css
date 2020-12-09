@@ -100,3 +100,7 @@ html {
 .list {
 	margin-top: 20px;
 }
+
+.form__empty {
+	margin-top: 20px;
+}
