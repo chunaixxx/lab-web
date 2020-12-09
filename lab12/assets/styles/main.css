@@ -106,6 +106,10 @@ html {
 	margin-top: 20px;
 }
 
+.list__item {
+	margin-bottom: 7px;
+}
+
 .form__empty {
 	margin-top: 20px;
 }
