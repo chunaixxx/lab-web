@@ -91,7 +91,14 @@
 							firstname: this.firstnameInput,
 							surname: this.surnameInput,
 							id: this.idLast
-						});						
+						});
+
+						this.clearForm();				
+					},
+
+					clearForm() {
+						this.surnameInput = '';
+						this.firstnameInput = '';
 					}
 				}
 			})
