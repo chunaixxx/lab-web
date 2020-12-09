@@ -30,8 +30,9 @@
 					<div class="form__input-title">Фамилия</div>
 
 					<input
-						v-model="surnameInput" 
-						type="text" 
+						v-on:input="validate()"
+						v-model="surnameInput"
+						type="text"
 						class="form__input"
 					>
 				</label>
@@ -40,6 +41,7 @@
 					<div class="form__input-title">Имя</div>
 
 					<input
+						v-on:input="validate()"
 						v-model="firstnameInput" 
 						type="text" 
 						class="form__input"
@@ -49,6 +51,7 @@
 				<div class="form__count">Количество символов: 123</div>
 
 				<input
+					:disabled="isDisabled"
 					v-on:click="addStudents($event)"
 					type="submit"
 					value="Записать"
@@ -74,11 +77,11 @@
 			const vm = new Vue({
 				el: '#app',
 				data: {
-					students: [
-
-					],
+					students: [],
 
 					idLast: 0,
+
+					isDisabled: true,
 
 					surnameInput: '',
 					firstnameInput: '',
@@ -98,11 +101,19 @@
 						this.clearForm();				
 					},
 
+					validate() {
+						if (this.firstnameInput && this.surnameInput)
+							this.isDisabled = false
+						else
+							this.isDisabled = true
+					},
+
 					clearForm() {
 						this.surnameInput = '';
 						this.firstnameInput = '';
+						this.isDisabled = true;
 					}
-				}
+				},
 			})
 		</script>
 	</body>

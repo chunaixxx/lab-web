@@ -97,6 +97,11 @@ html {
 	background-color: #222;
 }
 
+.form__submit:disabled {
+	background-color: rgb(105, 105, 105);
+	cursor: default;
+}
+
 .list {
 	margin-top: 20px;
 }
