@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 2</title>
+</head>
+<body>
+	<pre style="font-family: 'Courier New', Courier, monospace">
+const arrayCut = arr => {
+	const copyArr = [...arr];
+	
+	for (key of arr)
+		console.log(`${ copyArr.pop() } ${ copyArr.length ? `осталось [${ copyArr }]` : `` }`);
+}
+
+arrayCut([1, 2, 3, 4, 5]);
+	</pre>
+
+
+	<script>
+		const arrayCut = arr => {
+			const copyArr = [...arr];
+			
+			for (key of arr)
+				console.log(`${ copyArr.pop() } ${ copyArr.length ? `осталось [${ copyArr }]` : `` }`);
+		}
+
+		arrayCut([1, 2, 3, 4, 5]);
+	</script>
+</body>
+</html>
