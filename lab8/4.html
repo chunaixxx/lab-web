@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 4</title>
+</head>
+<body>
+	<pre style="font-family: 'Courier New', Courier, monospace">
+let [num1, num2, num3] = [0, -3, 1]
+
+if (num1 > num2)
+	[num1, num2] = [num2, num1];
+
+if (num2 > num3)
+	[num2, num3] = [num3, num2];
+
+if (num1 > num2)
+	[num1, num2] = [num2, num1];
+
+console.log(num1, num2, num3);
+	</pre>
+
+	<script>
+		let [num1, num2, num3] = [0, -3, 1]
+
+		if (num1 > num2)
+			[num1, num2] = [num2, num1];
+
+		if (num2 > num3)
+			[num2, num3] = [num3, num2];
+
+		if (num1 > num2)
+			[num1, num2] = [num2, num1];
+
+		console.log(num1, num2, num3);
+	</script>
+</body>
+</html>
