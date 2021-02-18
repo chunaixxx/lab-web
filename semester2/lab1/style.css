@@ -1,0 +1,123 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Courier Prime', monospace;
+}
+
+body {
+	background: rgb(223, 223, 223);
+}
+
+.wrapper {
+	margin-bottom: 50px;
+}
+
+.title {
+	text-align: center;
+	font-weight: normal;
+	margin: 20px 0;
+}
+
+.card {
+	background: #fff;
+	max-width: 300px;
+	text-align: center;
+
+	margin: 20px;
+}
+
+.card img {
+	object-fit: contain;
+	width: 100%;
+}
+
+.card__info {
+	padding: 20px;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.justify {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.direction {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.align {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.self {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	min-height: 400px;
+}
+
+.self .card-self {
+	align-self: flex-end;
+}
+
+.basis {
+	justify-content: space-around;
+}
+
+.basis .card {
+	max-width: none;
+	flex-basis: 100px;
+}
+
+.grow {
+	flex-grow: 1;
+}
+
+.grow .card {
+	flex-grow: 1;
+	width: 200px;
+	max-width: none;
+}
+
+.grow .card-grow {
+	flex-grow: 3;
+}
+
+.shrink {
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+
+.shrink .card {
+	max-width: 500px;
+	flex-shrink: 1;
+}
+
+.shrink .card-shrink {
+	flex-shrink: 3;
+} 
+
+@media (max-width: 1300px) {
+	.shrink {
+		flex-wrap: wrap;
+	}
+}
+
+.order {
+	justify-content: space-around;
+}
+
+.order .card-order {
+	order: 4;
+}
