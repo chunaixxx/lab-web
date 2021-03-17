@@ -47,16 +47,29 @@
 .cloud {
     position: absolute;
     z-index: 3;
-    left: -25%;
-}
-
-.cloud2 {
-    width: 150px;
 }
 
 .cloud1 {
     width: 120px;
     top: 70px;
+	left: -30%;
+}
+
+.cloud2 {
+    width: 150px;
+	left: -20%;
+}
+
+.cloud3 {
+    width: 180px;
+	left: -40%;
+	top: 20px;
+}
+
+.cloud4 {
+    width: 150px;
+	left: -30%;
+	top: 30px;
 }
 
 .sun {
@@ -68,8 +81,134 @@
     
 }
 
+.car {
+	width: 300px;
+	left: -0%;
+	bottom: 20px;
+	position: absolute;
+	z-index: 2;
+	animation: 3s car infinite ease;
+}
+
+@keyframes car {
+	from {
+		left: -35%
+	}
+
+	to {
+		left: 135%;
+	}
+}
+
+.road {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	background: #333;
+}
+
 .paused {
     animation-play-state: paused;
+}
+
+.shop {
+	position: relative;
+	top: 420px;
+	left: 400px;
+}
+
+.plate {
+	position: absolute;
+	background: #000;
+	color: #fff;
+	padding: 10px;
+
+	top: 100px;
+	left: -65px;
+	z-index: 5;
+
+	font-size: .8em;
+
+	animation: 2s plate infinite alternate linear;
+}
+
+
+@keyframes plate {
+	from {
+		transform: rotate(-10deg)
+	}
+
+	to {
+		transform: rotate(10deg)
+	}
+}
+
+.person {
+	position: relative;
+	left: 0;
+}
+
+.person-head, .person-body, .person-hand1, .person-hand2-img {
+	position: absolute;
+	width: 150px;
+}
+
+.person-body {
+	top: 80px;
+}
+
+.person-hand1 {
+	top: 60px;
+	left: -30px;
+}
+
+.person-hand2 {
+	position: absolute;
+	top: 68px;
+	left: 25px;
+	animation: 1s hand2 infinite alternate linear;
+	transform-origin: center left;
+}
+
+@keyframes hand2 {
+	from {
+		transform: rotate(0deg)
+	}
+
+	to {
+		transform: rotate(-5deg)
+	}
+}
+
+
+.tomato2 {
+	position: absolute;
+	width: 100px;
+	left: 60px;
+	animation: 2s tomato2 infinite ease-in-out;
+}
+
+@keyframes tomato2 {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+
+	50% {
+		transform: rotate(360deg) scale(1.2);
+	}
+
+	100% {
+		transform: rotate(360deg) scale(1);
+	}
+}
+
+.tomato1 {
+	position: absolute;
+	width: 100px;
+	top: 150px;
+	left: 120px;
 }
 
 @keyframes sun {
