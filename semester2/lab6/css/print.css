@@ -1,0 +1,45 @@
+@media print {
+	@page {
+        margin: 1cm;
+    }
+
+	.menu-burger, .buttonTop, .header__links, .link, .block-center, .modal__button-wrapper {
+		display: none;
+	}
+
+	.header, .header__inner {
+		background: none;
+	}
+
+	.header {
+		padding: 0;
+		page-break-before: always;
+		margin-top: 10cm;
+	}
+
+	.card {
+		margin-bottom: 0px;
+		box-shadow: none;
+	}
+
+	.card:hover {
+		box-shadow: none;
+	}
+
+	.section__title {
+		margin-bottom: 10px;
+	}
+
+	.section__paragraph {
+		margin-bottom: 15px;
+	}
+
+	.card > .flex, .card__main > .flex {
+		display: none;
+	}
+
+	.section {
+		padding: 30px 0;
+		page-break-before: always;
+	}
+}
