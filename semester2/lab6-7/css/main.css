@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-size: 16px;
+}
+
 :root {
 	--purple: #6F537B;
 	--purple-rgb: 111, 83, 123;
@@ -76,7 +80,7 @@ a {
 	padding: 20px 55px;
 	border: 0;
 	border-radius: 30px;
-	font-size: 16px;
+	font-size: 1rem;
 	display: inline-block;
 	font-weight: bold;
 	cursor: pointer;
@@ -112,7 +116,7 @@ a {
 
 .num-list__item {
 	font-weight: 350;
-	font-size: 21px;
+	font-size: 1.2rem;
 
 	margin-bottom: 25px;
 }
@@ -230,7 +234,7 @@ a {
 	padding: 75px 25px;
 
 	background-color: var(--white-bg);
-	font-size: 16px;
+	font-size: 1rem;
 	transform: translate(100%);
 	transition: transform .3s ease;	
 
@@ -252,6 +256,9 @@ a {
 .nav__block {
 	display: flex;
 	flex-direction: column;
+
+	overflow: hidden;
+	position: relative;
 }
 
 .nav__logo {
@@ -260,6 +267,11 @@ a {
 
 .nav__link {
 	margin-top: 25px;
+}
+
+.nav__link--skip {
+	position: absolute;
+	bottom: 500em;
 }
 
 .button-border {
@@ -337,12 +349,12 @@ a {
 }
 
 .header__title {
-	font-size: 62px;
+	font-size: 3.8rem;
 	margin: 10px 0 35px 0;
 }
 
 .header__subtitle {
-	font-size: 23px;
+	font-size: 1.4rem;
 	margin-bottom: 55px;
 	max-width: 1000px;
 
@@ -358,7 +370,7 @@ a {
 }
 
 .link {
-	font-size: 18px;
+	font-size: 1.1rem;
 	position: relative;
 }
 
@@ -400,13 +412,13 @@ a {
 
 .section__title {
 	color: var(--purple);
-	font-size: 40px;
+	font-size: 2.5rem;
 	margin-bottom: 40px;
 }
 
 .section__paragraph {
 	font-weight: 350;
-	font-size: 21px;
+	font-size: 1.5rem;
 
 	margin-bottom: 35px;
 }
@@ -466,13 +478,13 @@ a {
 }
 
 .card__title {
-	font-size: 20px;
+	font-size: 1.2rem;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 
 .card__subtitle {
-	font-size: 20px;
+	font-size: 1.2rem;
 	font-weight: normal;
 
 	display: flex;
@@ -481,7 +493,7 @@ a {
 }
 
 .card__link {
-	font-size: 18px;
+	font-size: 1.05rem;
 	text-decoration: underline;
 
 	margin-top: 15px;
@@ -502,7 +514,7 @@ a {
 .block-center__text{
 	text-align: center;
 	font-weight: normal;
-	font-size: 27px;
+	font-size: 1.8rem;
 
 	color: var(--black-text);
 }
@@ -520,7 +532,7 @@ a {
 	position: relative;
 	overflow: hidden;
 
-	font-size: 10px;
+	font-size: .8rem;
 }
 
 .hashtag__element {
@@ -610,14 +622,14 @@ a {
 	margin-bottom: 30px;
 	
 	text-transform: uppercase;
-	font-size: 23px;
+	font-size: 1.5rem;
 	
 	color: var(--black-text);
 }
 
 .block-strategy__paragraph {
 	margin-bottom: 15px;
-	font-size: 18px;
+	font-size: 1.05rem;
 }
 
 .conclusions__download-link{
@@ -691,14 +703,14 @@ a {
 }
 
 .modal__title {
-	font-size: 35px;
+	font-size: 2.1rem;
 	margin-bottom: 10px;
 	color: var(--black-text)
 }
 
 .modal__paragraph {
 	font-weight: 350;
-	font-size: 21px;
+	font-size: 1.5rem;
 	margin-bottom: 25px;
 }
 
@@ -736,6 +748,47 @@ a {
 }
 /* /modal */
 
+/* form */
+.form {
+	display: flex;
+	flex-direction: column;
+	padding: 100px;
+}
+
+.form__title {
+	margin-bottom: 10px;
+}
+
+.label {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.label__title {
+	margin-bottom: 5px;
+}
+
+.label__input {
+	border: none;
+	border-radius: 0;
+	background-color: var(--pink);
+	color: var(--purple);
+	padding: 10px 20px;
+	font-size: 1.2rem;
+}
+
+.form__submit {
+	border: 0;
+	background: var(--purple);
+	color: var(--white-text);
+	padding: 10px;
+	font-size: 1.2rem;
+	cursor: pointer;
+}
+
+/* /form */
+
 @media (max-width: 1199px) {
 	.header__inner {
 		background-position: 650px 50px;
@@ -744,7 +797,7 @@ a {
 
 
 	.hashtag {
-		font-size: 9px;
+		font-size: 0.6rem;
 	}
 }
 
@@ -788,13 +841,13 @@ a {
 	}
 
 	.hashtag {
-		font-size: 7px;
+		font-size: .5rem;
 	}
 }
 
 @media (max-width: 768px) {
 	.header__title {
-		font-size: 45px;
+		font-size: 2.5rem;
 	}
 
 	.header__links {
@@ -857,7 +910,7 @@ a {
 
 @media (max-width: 500px) {
 	.hashtag {
-		font-size: 8px;
+		font-size: .5rem;
 	}
 
 	.hashtag__element-3 {
